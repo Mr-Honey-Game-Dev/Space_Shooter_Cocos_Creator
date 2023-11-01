@@ -1,0 +1,16 @@
+{
+  "__version__": "1.3.7",
+  "splash-setting": {
+    "background": {
+      "color": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      }
+    },
+    "logo": {
+      "type": "none"
+    }
+  }
+}

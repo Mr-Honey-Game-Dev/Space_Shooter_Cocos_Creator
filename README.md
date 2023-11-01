@@ -12,9 +12,9 @@ Project Space Shooter is a 2D arcade game that takes players on an epic space ad
 Just open the below mentioned playable link and you should be able to play the web build
 
 ## Playable links
-Android-web - https://space-shooter-mobile.web.app/ 
+Desktop and Android - web - https://space-shooter-mobile.web.app/ 
 
-Desktop-web - https://space-shooter-e1a89.web.app/ 
+Desktop only -web - https://space-shooter-e1a89.web.app/ 
 
 (Note- This game is not tested for ios yet.)
 

@@ -64,7 +64,7 @@ export class Asteroid extends Component {
     // contact begin callback
     onBeginContact (selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
            
-        
+        if(selfCollider.node!=this.node) return;
         
         if(otherCollider.tag==2 && selfCollider.tag==1) //2 represents player tag
         {            

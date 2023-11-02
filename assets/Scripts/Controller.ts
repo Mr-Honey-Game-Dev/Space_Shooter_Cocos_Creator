@@ -116,19 +116,30 @@ export class Controller extends Component {
         this.powerUpTime=4;
         this.powerParticle.resetSystem();
     }
+
+    private isRemoveShieldScheduled:boolean=false;
     isShielded()
     {
         return this.haveShield;
     }
     giveShield()
     {
+        if(this.isRemoveShieldScheduled)
+            this.unschedule(this.removeShield);
         this.haveShield=true;
         this.shieldParticle.resetSystem()
     }
     useShield()
-    {        
+    {   
+       if(!this.isRemoveShieldScheduled){
+        this.scheduleOnce(this.removeShield, 0.5); 
+        this.isRemoveShieldScheduled=true;  }    
+    }
+    removeShield()
+    {
         this.haveShield=false;
         this.shieldParticle.stopSystem()
+        this.isRemoveShieldScheduled=false;
     }
 
 //#endregion
